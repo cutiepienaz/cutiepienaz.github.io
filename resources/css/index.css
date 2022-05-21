@@ -1,0 +1,37 @@
+.banner {
+    background-color: honeydew;
+    color: black;
+    margin-top: 75px;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+#marina {
+    height: 500px;
+    width: 500px;
+    border: goldenrod;
+    text-align: center;
+    position: sticky;
+    top:0%;
+
+}
+#four{
+    color: cadetblue;
+    font-size: x-large;
+    text-align: center;
+
+}
+.bold {
+    font-weight: 900;
+    text-align: center;
+}
+
+body{
+    text-align: center;
+    font-family: cursive;
+    font-size: x-large;
+    background-color: lightpink;
+
+    
+}
