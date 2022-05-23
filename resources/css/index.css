@@ -1,37 +1,225 @@
-.banner {
-    background-color: honeydew;
-    color: black;
-    margin-top: 75px;
-    padding: 100px 0;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/4040592/pexels-photo-4040592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: top;
+    background-size:cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
     position: relative;
 }
-
-#marina {
-    height: 500px;
-    width: 500px;
-    border: goldenrod;
-    text-align: center;
-    position: sticky;
-    top:0%;
+.navbar {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1px;
+  
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+    display: inline-block
 
 }
-#four{
-    color: cadetblue;
-    font-size: x-large;
-    text-align: center;
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
 
+li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.bold {
-    font-weight: 900;
+.btn {
+    border-radius: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: double;
+    color: #232;
+    border-style: double;
+    border-color:rgb(250, 58, 116);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+nav ul li a{
+    color: #666;
+}
+a:hover{
+    background-image: linear-gradient(pink,white);
+}
+.content h1{
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    color: #232;
+    font-family: 'Lucida Sans';
+    text-transform: capitalize;
+    box-shadow: rgba(247, 149, 165, 0.274) 5px 5px, rgba(247, 149, 165, 0.3) 10px 10px, 
+    rgba(247, 149, 165, 0.2) 15px 15px, rgba(247, 149, 165,0.1) 20px 20px, rgba(247, 149, 165, 0.05) 25px 25px;
+}
+.content p{
+    font-size: 18px;
+    font-stretch: ultra-expanded;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #232;
+    font-family: 'Lucida Sans';
+    text-transform: full-width;
+}
+.content {
     text-align: center;
 }
+h1{
+    padding-top: 20px;;
+}
+
+.arrow img{
+    width: 40px;
+    position: relative;
+    bottom: 350px;
+    right: 774px;
+    display: inline-block;
+}
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(255, 183, 210);
+    opacity: 30%;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+  }
+  
+form {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 350px;
+    margin: 50px;
+}
+
+.input{
+    border-width: 5px;
+    border-radius: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-stretch: expanded;
+    border-color: rgb(247, 149, 165);
+}
+#button{
+    font-size: 15px;
+    border-width: 5px;
+    border-radius: 15%;
+}
+
+
 
 body{
-    text-align: center;
-    font-family: cursive;
-    font-size: x-large;
-    background-color: lightpink;
-
+    margin:0;
+    padding:0;
+  }
+#glow{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    display:flex;
     
-}
+  }
+#ball{
+    list-style:none;
+    width:40px;
+    height:40px;
+    background:#fff;
+    border-radius:50%;
+    animation:grow 1.6s ease-in-out infinite;
+  }
+    @keyframes grow
+    {
+      0% , 40% , 100%
+      {
+        transform:scale(0.2);
+      }
+      20%{
+         transform:scale(1);
+  
+      }
+    }
+  
+ #ball:nth-child(1){
+    animation-delay:-1.7s;
+    background:rgb(247, 149, 165);
+    box-shadow:0 0 50px #ee4c75;
+    
+  }
+#ball:nth-child(2){
+    animation-delay:-1.5s;
+    background:#f37878;
+    box-shadow:0 0 50px #f58a69;
+    
+  }
+#ball:nth-child(3){
+    animation-delay:-1.3s;
+    background:#f388ab;
+    box-shadow:0 0 50px #fccddd;
+    
+  }
+#ball:nth-child(4){
+    animation-delay:-1.1s;
+    background:rgb(247, 149, 165);
+    box-shadow:0 0 50px #ee4c75;
+    
+  }
+#ball:nth-child(5){
+    animation-delay:-0.9s;
+    background:#f37878;
+    box-shadow:0 0 50px #f58a69;
+    
+  }
+#ball:nth-child(6){
+    animation-delay:-0.7s;
+    background:#ff9d3a;
+    box-shadow:0 0 50px #ee841a;
+    
+  }
+#ball:nth-child(7){
+    animation-delay:-0.5s;
+    background:#f06292;
+    box-shadow:0 0 50px #f06292;
+    
+  }
